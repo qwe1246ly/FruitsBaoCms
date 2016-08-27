@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff3531</color>
+    <color name="orange">#ff6600</color>
+    <color name="yellow">#d5da3b</color>
+
+    <color name="background">#f5f5f5</color>
+    <color name="theme_color">#5dc052</color>
+
+    <!--字体标题颜色-->
+    <color name="title_color">#333333</color>
+    <color name="second_txt_color">#666666</color>
+    <color name="third_txt_color">#999999</color>
+
+    <!-- 间隔线 -->
+    <color name="parting_line">#e5e5e5</color>
+
+
+
+    <color name="transparent_60">#99000000</color>
+    <color name="mine_tranlate">#4d000000</color>
+</resources>

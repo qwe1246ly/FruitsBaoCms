@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/theme_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/home_location_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@mipmap/icon_location" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_8"
+                android:background="@color/parting_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/home_location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平顶山"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/home_route_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="线上001"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_search_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_transparent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@mipmap/search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="输入搜索词"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/home_menu_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@mipmap/icon_menu" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/home_fragment_cycle_viewpager"
+        android:name="com.fruit.baocms.widget.CycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120" />
+
+    <com.fruit.baocms.widget.GridViewForScrollView
+        android:id="@+id/home_option_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:background="@color/white"
+        android:numColumns="4"></com.fruit.baocms.widget.GridViewForScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_click" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="整点秒杀"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="快点我"
+                android:textColor="@color/third_txt_color"
+                android:textSize="@dimen/sp_14" />
+
+            <cn.iwgang.countdownview.CountdownView
+                android:id="@+id/home_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                app:isHideTimeBackground="false"
+                app:isShowHour="true"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:isTimeTextBold="true"
+                app:suffixGravity="center"
+                app:suffixTextColor="@color/orange"
+                app:suffixTextSize="14sp"
+                app:timeBgBorderRadius="@dimen/dp_5"
+                app:timeBgColor="@color/orange"
+                app:timeTextColor="#fff"
+                app:timeTextSize="12sp" />
+
+            <ImageView
+                android:id="@+id/icon_seckill_iv"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_10"
+                android:src="@mipmap/icon_defult" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/parting_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/icon_first_iv"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_defult" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/icon_second_iv"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/icon_defult" />
+
+                <ImageView
+                    android:id="@+id/icon_third_iv"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/icon_defult" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:text="正在秒杀"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/title_color"/>
+
+    <com.fruit.baocms.widget.GridViewForScrollView
+        android:id="@+id/home_seckill_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="@dimen/dp_10"
+        android:horizontalSpacing="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_10"
+        android:numColumns="2"></com.fruit.baocms.widget.GridViewForScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:text="当季热卖"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/title_color"/>
+
+    <com.fruit.baocms.widget.GridViewForScrollView
+        android:id="@+id/home_hotsale_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="@dimen/dp_10"
+        android:horizontalSpacing="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_10"
+        android:numColumns="2"></com.fruit.baocms.widget.GridViewForScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

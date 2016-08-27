@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/route_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_color"
+            android:text="线上01"
+            android:textSize="@dimen/sp_16"/>
+
+        <TextView
+            android:id="@+id/route_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/third_txt_color"
+            android:text="新站区"
+            android:textSize="@dimen/sp_16"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/commit_title" />
+
+    <fragment
+        android:id="@+id/location_fragment_cycle_viewpager"
+        android:name="com.fruit.baocms.widget.CycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10"
+        android:text="请选择城市和提货点"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/parting_line" />
+
+    <GridView
+        android:id="@+id/city_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_margin="@dimen/dp_10"
+        android:verticalSpacing="@dimen/dp_10"
+       ></GridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/parting_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/area_lv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"></ListView>
+
+        <ListView
+            android:id="@+id/route_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

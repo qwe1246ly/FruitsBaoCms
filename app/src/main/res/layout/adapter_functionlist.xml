@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/function_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@mipmap/icon_panic_buy" />
+
+        <TextView
+            android:id="@+id/function_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/function_pic"
+            android:text="我的抢购劵"
+            android:textColor="@color/second_txt_color"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/function_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@mipmap/icon_arrow_right" />
+
+        <TextView
+            android:id="@+id/function_num"
+            android:layout_width="40dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toLeftOf="@id/function_arrow"
+            android:background="@drawable/bg_function_tip"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="@dimen/dp_3"
+            android:text="0"
+            android:textSize="@dimen/sp_14"
+            android:visibility="visible"
+            android:textColor="@color/red" />
+
+    </RelativeLayout>
+
+</LinearLayout>

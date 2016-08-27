@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="287dp"
+                android:background="@mipmap/icon_mine_title"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:text="我的"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_20" />
+
+                    <ImageView
+                        android:id="@+id/mine_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:src="@mipmap/icon_set" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@mipmap/icon_head_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.fruit.baocms.widget.RoundImageView
+                        android:id="@+id/mine_headimg"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@mipmap/icon_head" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mine_login_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/mine_user_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mine_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="未登陆"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/mine_user_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/icon_phone"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:text="未登陆"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_toRightOf="@id/mine_user_msg"
+                        android:src="@mipmap/icon_arrow_right_white" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/mine_tranlate">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mine_jifen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:text="2分"
+                            android:textColor="@color/yellow" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的积分"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_15" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mine_yuer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:text="0.00元"
+                            android:textColor="#ff9c00" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的余额"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_15" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mine_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:text="10"
+                            android:textColor="#ff1626" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的收藏"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_15" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.fruit.baocms.widget.GridViewForScrollView
+                android:id="@+id/mine_my_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:numColumns="3"
+                android:background="@color/white"></com.fruit.baocms.widget.GridViewForScrollView>
+
+            <com.fruit.baocms.widget.ListViewForScrollView
+                android:id="@+id/mine_function_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:dividerHeight="@dimen/dp_1"
+                android:divider="@color/parting_line"
+                ></com.fruit.baocms.widget.ListViewForScrollView>
+
+            <com.fruit.baocms.widget.ListViewForScrollView
+                android:id="@+id/mine_function_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:dividerHeight="@dimen/dp_1"
+                android:divider="@color/parting_line"
+                ></com.fruit.baocms.widget.ListViewForScrollView>
+
+            <com.fruit.baocms.widget.ListViewForScrollView
+                android:id="@+id/mine_function_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:dividerHeight="@dimen/dp_1"
+                android:divider="@color/parting_line"
+                ></com.fruit.baocms.widget.ListViewForScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
